@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 router.use("/about", (req, res, next) => {
+  console.log(req.body);
   res.render("about", {
     pageTitle: "Welcome",
     tag: "Hello on HBS",
